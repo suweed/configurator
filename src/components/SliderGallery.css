@@ -1,0 +1,78 @@
+.carousel-images {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-images div div:nth-child(1) {
+    height: 80% !important;
+}
+
+.carousel-images div div:nth-child(2) {
+    width: 100%;
+    height: 20% !important;
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    transform: none !important;
+}
+
+.carousel-images div div:nth-child(2) div {
+    position: relative !important;
+    transform: none !important;
+    height: 100% !important;
+    width: 95%;
+    margin: auto;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option.back {
+    width: 5%;
+    margin-right: 5px;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .content-slider-images {
+    display: flex;
+    width: 85%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .content-slider-images .scroll-images {
+    overflow: initial;
+    white-space: nowrap;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option.next {
+    width: 5%;
+    margin-left: 5px;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option.image {
+    padding: 5px 5px;
+    margin: auto;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option.image.selected {
+    padding: 3px;
+}
+
+.carousel-images div div:nth-child(2) div .slider-controls .btn-option.image img {
+    width: 100%;
+    height: 100%;
+}
