@@ -1,8 +1,8 @@
 import { MeshReflectorMaterial, PresentationControls, Stage } from "@react-three/drei";
-import Chair_legs from "./Chair_legs";
 import { extend, useFrame, useThree, } from "@react-three/fiber";
 import { useRef } from "react";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import Chaircolchon from "./Chaircolchon";
 
 extend({ OrbitControls });
 
@@ -42,12 +42,13 @@ const Experience = () => {
             polar={[-0.1, Math.PI / 4]}
         >
             <Stage environment={"city"} intesity={0.6} contactShadow={false}>
-                <Chair_legs
+                <Chaircolchon
                     position={[0, 1.31, 0]}
                     rotation={[-1.57, 0, 0.5]}
+                    scale={[0.05, 0.05, 0.05]}
                 />
             </Stage>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.412, 0]}>
+            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.49, 0]}>
                 <planeGeometry args={[170, 170]} />
                 <MeshReflectorMaterial
                     blur={[300, 100]}

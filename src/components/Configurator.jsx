@@ -38,13 +38,13 @@ const Configurator = () => {
                     className={`item ${legs === 1 ? 'item--active' : ''}`}
                     onClick={() => setLegs(1)}
                 >
-                    Metal
+                    tipo1
                 </div>
                 <div
                     className={`item ${legs === 2 ? 'item--active' : ''}`}
                     onClick={() => setLegs(2)}
                 >
-                    Madera
+                    tipo2
                 </div>
             </div>
         </div>
